@@ -19,7 +19,7 @@ class Person {
 abstract class House {
   protected door: boolean = false;
   protected key: Key;
-  protected tenants: Person[] = [];
+  public tenants: Person[] = [];
   abstract openDoor(key: Key): void;
   comeIn(tenant: Person): void {
     if (this.door) {
